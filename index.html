@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decode StudieZone – Premier Coaching Institute</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; -webkit-font-smoothing: antialiased; }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        
+        /* FIXED: Changed 'shadow' to 'box-shadow' so the animation works */
+        @keyframes custom-pulse {
+            0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+            70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+        }
+        
+        .whatsapp-pulse {
+            animation: custom-pulse 2s infinite;
+        }
+    </style>
+</head>
+<body class="bg-zinc-50 text-zinc-600 selection:bg-blue-100 selection:text-blue-700">
+
+<header class="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-zinc-200/60">
+    <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+        <a href="#" class="flex items-center gap-2 group">
+            <span class="iconify text-blue-600 text-2xl group-hover:scale-110 transition-transform duration-300" data-icon="lucide:graduation-cap"></span>
+            <span class="text-zinc-900 font-semibold tracking-tighter text-lg">Decode<span class="text-zinc-400">StudieZone</span></span>
+        </a>
+
+        <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-zinc-500">
+            <a href="#courses" class="hover:text-zinc-900 transition-colors">Courses</a>
+            <a href="#features" class="hover:text-zinc-900 transition-colors">Features</a>
+            <a href="#offers" class="hover:text-zinc-900 transition-colors">Offers</a>
+            <a href="#faculty" class="hover:text-zinc-900 transition-colors">Faculty</a>
+            <a href="#contact" class="px-4 py-2 bg-zinc-900 text-white rounded-full hover:bg-zinc-800 transition-transform hover:scale-105 active:scale-95">Contact</a>
+        </nav>
+
+        <button id="menu-btn" class="md:hidden text-zinc-900">
+            <span class="iconify text-2xl" data-icon="lucide:menu"></span>
+        </button>
+    </div>
+</header>
+
+<div id="mobile-menu" class="fixed inset-0 bg-white z-[60] transform translate-x-full transition-transform duration-300 flex flex-col pt-24 px-6 gap-6 md:hidden">
+    <a href="#courses" class="text-2xl font-medium tracking-tight text-zinc-900 mobile-link">Courses</a>
+    <a href="#features" class="text-2xl font-medium tracking-tight text-zinc-900 mobile-link">Features</a>
+    <a href="#offers" class="text-2xl font-medium tracking-tight text-zinc-900 mobile-link">Offers</a>
+    <a href="#faculty" class="text-2xl font-medium tracking-tight text-zinc-900 mobile-link">Faculty</a>
+    <a href="#contact" class="text-2xl font-medium tracking-tight text-zinc-900 mobile-link">Contact</a>
+    <button id="close-menu" class="absolute top-5 right-6 text-zinc-500">
+        <span class="iconify text-3xl" data-icon="lucide:x"></span>
+    </button>
+</div>
+
+<section class="relative pt-32 pb-20 md:pt-48 md:pb-32 overflow-hidden">
+    <div class="absolute inset-0 -z-10">
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[500px] bg-blue-100/50 rounded-full blur-3xl opacity-60 mix-blend-multiply"></div>
+        <div class="absolute top-20 right-0 w-[800px] h-[400px] bg-indigo-100/50 rounded-full blur-3xl opacity-60 mix-blend-multiply"></div>
+    </div>
+    
+    <div class="max-w-4xl mx-auto px-6 text-center">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 border border-blue-100 text-blue-600 text-xs font-medium mb-6">
+            <span class="relative flex h-2 w-2">
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
+            </span>
+            Admissions Open
+        </div>
+        <h1 class="text-5xl md:text-7xl font-semibold text-zinc-900 tracking-tighter leading-[1.1] mb-6">
+            Unlock your academic <br>
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">potential today.</span>
+        </h1>
+        <p class="text-lg md:text-xl text-zinc-500 max-w-2xl mx-auto mb-10 leading-relaxed">
+            Comprehensive coaching for Class 1–12, NEET & JEE. Expert guidance to decode complex concepts into simple success steps.
+        </p>
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <a href="#contact" class="w-full sm:w-auto px-8 py-3.5 bg-zinc-900 text-white rounded-full font-medium hover:bg-zinc-800 transition-all hover:shadow-lg hover:shadow-zinc-900/20 active:scale-95 flex items-center justify-center gap-2">
+                Get Admission <span class="iconify" data-icon="lucide:arrow-right"></span>
+            </a>
+            <a href="#courses" class="w-full sm:w-auto px-8 py-3.5 bg-white text-zinc-900 border border-zinc-200 rounded-full font-medium hover:bg-zinc-50 transition-all active:scale-95">
+                View Courses
+            </a>
+        </div>
+    </div>
+</section>
+
+<section id="courses" class="py-24 bg-white border-y border-zinc-100">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="mb-16">
+            <h2 class="text-3xl md:text-4xl font-semibold text-zinc-900 tracking-tight mb-4">Academic Programs</h2>
+            <p class="text-zinc-500 text-lg">Complete educational support from primary years to collegiate entrance.</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="group relative p-8 rounded-3xl bg-zinc-50 border border-zinc-100 hover:border-zinc-300 transition-all duration-300 hover:shadow-xl hover:shadow-zinc-900/5">
+                <div class="w-12 h-12 bg-white rounded-2xl flex items-center justify-center mb-6 shadow-sm group-hover:scale-110 transition-transform text-zinc-700">
+                    <span class="iconify text-2xl" data-icon="lucide:shapes"></span>
+                </div>
+                <h3 class="text-2xl font-semibold text-zinc-900 mb-3 tracking-tight">Foundation</h3>
+                <p class="text-zinc-600 mb-6 leading-relaxed">Class 1 to 10. Building strong fundamentals across all core subjects to ensure future success.</p>
+                <ul class="space-y-3">
+                    <li class="flex items-center gap-3 text-sm text-zinc-600"><span class="iconify text-zinc-500" data-icon="lucide:check-circle-2"></span>Maths & Science</li>
+                    <li class="flex items-center gap-3 text-sm text-zinc-600"><span class="iconify text-zinc-500" data-icon="lucide:check-circle-2"></span>English & Social Studies</li>
+                    <li class="flex items-center gap-3 text-sm text-zinc-600"><span class="iconify text-zinc-500" data-icon="lucide:check-circle-2"></span>Olympiad Prep</li>
+                </ul>
+            </div>
+
+            <div class="group relative p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:border-blue-200 transition-all duration-300 hover:shadow-xl hover:shadow-blue-900/5">
+                <div class="w-12 h-12 bg-white rounded-2xl flex items-center justify-center mb-6 shadow-sm group-hover:scale-110 transition-transform text-blue-600">
+                    <span class="iconify text-2xl" data-icon="lucide:atom"></span>
+                </div>
+                <h3 class="text-2xl font-semibold text-slate-900 mb-3 tracking-tight">Science Stream</h3>
+                <p class="text-slate-600 mb-6 leading-relaxed">Class 11 & 12. Rigorous preparation for PCM/PCB, focusing on NEET & JEE fundamentals.</p>
+                <ul class="space-y-3">
+                    <li class="flex items-center gap-3 text-sm text-slate-600"><span class="iconify text-blue-500" data-icon="lucide:check-circle-2"></span>Physics & Chemistry</li>
+                    <li class="flex items-center gap-3 text-sm text-slate-600"><span class="iconify text-blue-500" data-icon="lucide:check-circle-2"></span>Mathematics / Biology</li>
+                    <li class="flex items-center gap-3 text-sm text-slate-600"><span class="iconify text-blue-500" data-icon="lucide:check-circle-2"></span>Competitive Mock Tests</li>
+                </ul>
+            </div>
+
+            <div class="group relative p-8 rounded-3xl bg-orange-50/50 border border-orange-100 hover:border-orange-200 transition-all duration-300 hover:shadow-xl hover:shadow-orange-900/5">
+                <div class="w-12 h-12 bg-white rounded-2xl flex items-center justify-center mb-6 shadow-sm group-hover:scale-110 transition-transform text-orange-600">
+                    <span class="iconify text-2xl" data-icon="lucide:trending-up"></span>
+                </div>
+                <h3 class="text-2xl font-semibold text-zinc-900 mb-3 tracking-tight">Commerce Stream</h3>
+                <p class="text-zinc-600 mb-6 leading-relaxed">Class 11 & 12. Master the financial world with expert guidance in core subjects.</p>
+                <ul class="space-y-3">
+                    <li class="flex items-center gap-3 text-sm text-zinc-600"><span class="iconify text-orange-500" data-icon="lucide:check-circle-2"></span>Accountancy & Economics</li>
+                    <li class="flex items-center gap-3 text-sm text-zinc-600"><span class="iconify text-orange-500" data-icon="lucide:check-circle-2"></span>Business Studies</li>
+                    <li class="flex items-center gap-3 text-sm text-zinc-600"><span class="iconify text-orange-500" data-icon="lucide:check-circle-2"></span>Applied Mathematics</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="features" class="py-24">
+    <div class="max-w-6xl mx-auto px-6">
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+            <div>
+                <h2 class="text-3xl md:text-4xl font-semibold text-zinc-900 tracking-tight mb-6">Why choose Decode?</h2>
+                <p class="text-zinc-500 text-lg mb-10 leading-relaxed">We don't just teach chapters; we build the mindset required to crack examinations and understand concepts deeply.</p>
+                
+                <div class="grid sm:grid-cols-2 gap-y-8 gap-x-12">
+                    <div class="flex flex-col gap-2">
+                        <span class="iconify text-blue-600 text-xl" data-icon="lucide:brain-circuit"></span>
+                        <h4 class="font-medium text-zinc-900">Concept Building</h4>
+                        <p class="text-sm text-zinc-500">Foundation first approach.</p>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <span class="iconify text-blue-600 text-xl" data-icon="lucide:book-open-check"></span>
+                        <h4 class="font-medium text-zinc-900">Question Banks</h4>
+                        <p class="text-sm text-zinc-500">Extensive practice sets.</p>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <span class="iconify text-blue-600 text-xl" data-icon="lucide:bar-chart-3"></span>
+                        <h4 class="font-medium text-zinc-900">Sectional Tests</h4>
+                        <p class="text-sm text-zinc-500">Regular performance tracking.</p>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <span class="iconify text-blue-600 text-xl" data-icon="lucide:user-check"></span>
+                        <h4 class="font-medium text-zinc-900">Mentorship</h4>
+                        <p class="text-sm text-zinc-500">1-on-1 guidance sessions.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="relative">
+                <div class="absolute inset-0 bg-gradient-to-tr from-blue-100 to-indigo-50 rounded-3xl transform rotate-3 scale-95 opacity-50"></div>
+                <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Students studying" class="relative rounded-3xl shadow-2xl border border-white object-cover h-[500px] w-full">
+                
+                <div class="absolute bottom-8 -left-8 bg-white p-5 rounded-2xl shadow-xl border border-zinc-100 max-w-xs hidden md:block">
+                    <div class="flex items-center gap-3 mb-2">
+                        <div class="bg-green-100 text-green-600 p-2 rounded-lg">
+                            <span class="iconify" data-icon="lucide:trophy"></span>
+                        </div>
+                        <span class="font-semibold text-zinc-900">Top Results</span>
+                    </div>
+                    <p class="text-xs text-zinc-500">Consistent excellence in board exams and competitive entrance tests.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="offers" class="py-24 bg-zinc-900 text-white">
+    <div class="max-w-6xl mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-semibold tracking-tight mb-4">Exclusive Benefits</h2>
+            <p class="text-zinc-400">Join now and take advantage of our early enrollment offers.</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-6">
+            <div class="bg-zinc-800/50 border border-zinc-700 p-8 rounded-3xl hover:bg-zinc-800 transition-colors">
+                <div class="flex items-start justify-between mb-8">
+                    <div>
+                        <h3 class="text-xl font-medium mb-1">Study Buddy</h3>
+                        <p class="text-zinc-400 text-sm">Group Learning Incentive</p>
+                    </div>
+                    <span class="iconify text-3xl text-yellow-400" data-icon="lucide:users"></span>
+                </div>
+                <p class="text-zinc-300 leading-relaxed">Enroll with friends in a group and unlock cumulative fee discounts. The bigger the group, the bigger the savings.</p>
+            </div>
+
+            <div class="bg-zinc-800/50 border border-zinc-700 p-8 rounded-3xl hover:bg-zinc-800 transition-colors">
+                <div class="flex items-start justify-between mb-8">
+                    <div>
+                        <h3 class="text-xl font-medium mb-1">Refer to Favour</h3>
+                        <p class="text-zinc-400 text-sm">Community Rewards</p>
+                    </div>
+                    <span class="iconify text-3xl text-blue-400" data-icon="lucide:gift"></span>
+                </div>
+                <p class="text-zinc-300 leading-relaxed">Refer a friend to Decode StudieZone and receive instant discounts on your monthly tuition fees.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="faculty" class="py-24 bg-white">
+    <div class="max-w-xl mx-auto px-6 text-center">
+        <h2 class="text-3xl md:text-4xl font-semibold text-zinc-900 tracking-tight mb-12">Expert Faculty</h2>
+        
+        <div class="p-8 rounded-3xl bg-white border border-zinc-200 shadow-xl shadow-zinc-200/50">
+            <div class="relative w-32 h-32 mx-auto mb-6">
+                <div class="absolute inset-0 bg-blue-100 rounded-full animate-pulse"></div>
+                <img src="teacher.png" alt="Mr. Sohan Singh" class="relative w-full h-full object-cover rounded-full border-4 border-white shadow-md">
+                <div class="absolute bottom-0 right-0 bg-blue-600 text-white p-2 rounded-full border-4 border-white">
+                    <span class="iconify w-4 h-4" data-icon="lucide:award"></span>
+                </div>
+            </div>
+            <h3 class="text-2xl font-semibold text-zinc-900 mb-2">Mr. Sohan Singh</h3>
+            <p class="text-blue-600 font-medium text-sm uppercase tracking-wide mb-6">Senior Faculty</p>
+            <p class="text-zinc-500 leading-relaxed text-sm">
+                Dedicated educator specializing in Class 1–12, NEET & JEE preparation. Committed to simplifying complex topics and mentoring students towards academic excellence.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="py-24 bg-zinc-50 border-t border-zinc-200">
+    <div class="max-w-6xl mx-auto px-6">
+        <div class="bg-white rounded-[2.5rem] p-4 md:p-8 shadow-sm border border-zinc-200 overflow-hidden">
+            <div class="grid md:grid-cols-2 gap-8 md:gap-12">
+                <div class="p-4 md:p-8 flex flex-col justify-center">
+                    <h2 class="text-3xl font-semibold text-zinc-900 tracking-tight mb-8">Visit Us</h2>
+                    
+                    <div class="space-y-8">
+                        <div class="flex items-start gap-5">
+                            <div class="w-12 h-12 rounded-full bg-zinc-50 border border-zinc-100 flex items-center justify-center shrink-0">
+                                <span class="iconify text-zinc-900 text-xl" data-icon="lucide:map-pin"></span>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-zinc-900 mb-1">Location</h4>
+                                <p class="text-zinc-500">Sonia Vihar, Delhi</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-5">
+                            <div class="w-12 h-12 rounded-full bg-zinc-50 border border-zinc-100 flex items-center justify-center shrink-0">
+                                <span class="iconify text-zinc-900 text-xl" data-icon="lucide:phone"></span>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-zinc-900 mb-1">Call Us</h4>
+                                <a href="tel:+919560292485" class="text-zinc-500 hover:text-blue-600 transition">+91 95602 92485</a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-5">
+                            <div class="w-12 h-12 rounded-full bg-zinc-50 border border-zinc-100 flex items-center justify-center shrink-0">
+                                <span class="iconify text-zinc-900 text-xl" data-icon="lucide:mail"></span>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-zinc-900 mb-1">Email</h4>
+                                <a href="mailto:info@decodestudiezone.com" class="text-zinc-500 hover:text-blue-600 transition">info@decodestudiezone.com</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8">
+                         <a href="https://www.google.com/maps/search/Sonia+Vihar,+Delhi" target="_blank" class="text-sm font-medium text-blue-600 hover:text-blue-700 hover:underline">
+                            View larger map &rarr;
+                        </a>
+                    </div>
+                </div>
+
+                <div class="w-full h-[350px] md:h-full rounded-2xl overflow-hidden border border-zinc-200">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14002.585721832044!2d77.24718425!3d28.69748685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfcf01826620d%3A0x608e90d796726884!2sSonia%20Vihar%2C%20New%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1709230000000!5m2!1sen!2sin" 
+                        class="w-full h-full border-0" 
+     allowfullscreen 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<a href="https://wa.me/919560292485" target="_blank" class="fixed bottom-6 right-6 z-50 bg-[#25D366] text-white p-4 rounded-full shadow-xl hover:scale-110 transition-transform duration-300 flex items-center justify-center whatsapp-pulse group" aria-label="Chat with us on WhatsApp">
+    <span class="iconify text-3xl" data-icon="ic:baseline-whatsapp"></span>
+    <span class="absolute right-full mr-3 bg-white text-zinc-800 text-xs font-medium px-3 py-1.5 rounded-lg shadow-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">
+        Chat with us
+    </span>
+</a>
+
+<script>
+    // Simple script to toggle mobile menu
+    const menuBtn = document.getElementById('menu-btn');
+    const closeBtn = document.getElementById('close-menu');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const mobileLinks = document.querySelectorAll('.mobile-link');
+
+    function toggleMenu() {
+        mobileMenu.classList.toggle('translate-x-full');
+        document.body.classList.toggle('overflow-hidden');
+    }
+
+    menuBtn.addEventListener('click', toggleMenu);
+    closeBtn.addEventListener('click', toggleMenu);
+    
+    // Close menu when a link is clicked
+    mobileLinks.forEach(link => {
+        link.addEventListener('click', toggleMenu);
+    });
+</script>
+    <footer class="bg-zinc-900 text-zinc-400 py-6 mt-16">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+        <p class="text-sm">
+            © 2026-2050 Decode StudieZone. All rights reserved.
+        </p>
+        <p class="text-sm mt-1">
+            Developed by <span class="text-white font-medium">Swan Agency</span>
+        </p>
+    </div>
+    </footer>
+
+</body>
+</html>
+
+
